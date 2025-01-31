@@ -10,6 +10,11 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
     <!-- Tailwind CSS custom color -->
     <script>
         tailwind.config = {
@@ -28,6 +33,14 @@
           }
         }
       </script>
+
+      <style>
+        .adlam-display-regular {
+        font-family: "ADLaM Display", serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+      </style>
       
   </head>
   <body>
@@ -58,7 +71,7 @@
                         </div>
                         <ul
                           tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-28 p-2 shadow">
                           <li><a>Find a pet</a></li>
                           <li><a>Breed</a> </li>
                           <li><a>Contact us</a></li>
@@ -257,11 +270,32 @@
             </div>
             
          </section>
+         <!-- customer review section -->
+         <section class="w-9/12 mx-auto py-10 space-y-8">
+            <h1 class="text-3xl text-center font-bold">Our new collection</h1>
+            <div class="flex  justify-center">
+                <div class="carousel carousel-vertical rounded-box h-96">
+                    <div class="carousel-item h-full">
+                      <img class="object-cover" src="./image/cute-pet-mid.png" />
+                    </div>
+                    <div class="carousel-item h-full">
+                      <img class="w-full" src="./image/images.jpeg" />
+                    </div>
+                    <div class="carousel-item h-full">
+                        <img class="w-full" src="./image/cute-dog-mid.png" />
+                      </div>
+                    
+                  </div>
+            </div>
+            
+              </div>
+
+        </section>
          <!-- Everyday Low Price -->
          <section>
-            <div class="w-9/12 mx-auto space-y-6 mb-96">
+            <div class="w-9/12 mx-auto space-y-6 mt-10 mb-96">
                 <h1 class="text-4xl font-bold">Everyday low Price</h1>
-                <div class=" lg:flex gap-6 ">
+                <div class=" space-y-6 lg:space-y-0 lg:flex gap-6 ">
                     <!-- bg-linear-to-r from-[#F8CCFB] to-[#ACD2FD] -->
                     <div class=" bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] p-2 w-full relative rounded-xl h-[500px] lg:w-7/12 lg:flex lg:justify-around lg:items-center"> 
                         <div class="space-y-4 z-10 relative top-5 lg:top-0 ">
@@ -285,8 +319,15 @@
                         </div>
                     </div>
                 </div>
+
+
+                
+
             </div>
+            
          </section>
+         <!-- Customer review section -->
+         
     </menu>
 
     <!-- Footer section -->
